@@ -56,7 +56,7 @@ async function getNext5Days(){
             imgData = "rainy";
         };
         const img = document.createElement("img");
-        img.src = `icons/${imgData}.png`;
+        img.src = `img/${imgData}.png`;
         next5DaysIcon.appendChild(img);
 
         //minT
