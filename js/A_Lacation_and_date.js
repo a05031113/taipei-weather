@@ -3,39 +3,40 @@ const today = new Date();
 const month = today.getMonth();
 const date = today.getDate();
 const day = today.getDay();
+const paddedDate = date.toString().padStart(2, "0")
 
 const locationAndDateHtml = `
-    <h1 class="location-and-date__location">Taipei, TW</h1>
-    <div>${dayTrans(day)} ${monthTrans(month)} ${date}</div>
+    <h1 class="location-and-date__location">台北, TW</h1>
+    <div>${dayTrans(day)} ${monthTrans(month)}/${paddedDate}</div>
 `;
 locationAndDate.insertAdjacentHTML("beforeend", locationAndDateHtml);
 
 function monthTrans(month) {
     let monthForEN = ``;
     if (month === 0) {
-        monthForEN = `Jan`;
+        monthForEN = `01`;
     } else if (month === 1) {
-        monthForEN = `Feb`;
+        monthForEN = `02`;
     } else if (month === 2) {
-        monthForEN = `Mar`;
+        monthForEN = `03`;
     } else if (month === 3) {
-        monthForEN = `Apr`;
+        monthForEN = `04`;
     } else if (month === 4) {
-        monthForEN = `May`;
+        monthForEN = `05`;
     } else if (month === 5) {
-        monthForEN = `Jun`;
+        monthForEN = `06`;
     } else if (month === 6) {
-        monthForEN = `Jul`;
+        monthForEN = `07`;
     } else if (month === 7) {
-        monthForEN = `Aug`;
+        monthForEN = `08`;
     } else if (month === 8) {
-        monthForEN = `Sep`;
+        monthForEN = `09`;
     } else if (month === 9) {
-        monthForEN = `Oct`;
+        monthForEN = `10`;
     } else if (month === 10) {
-        monthForEN = `Nov`;
+        monthForEN = `11`;
     } else if (month === 11) {
-        monthForEN = `Dec`;
+        monthForEN = `12`;
     }
     return monthForEN;
 }
@@ -43,19 +44,19 @@ function monthTrans(month) {
 function dayTrans(day) {
     let dayForEN = ``;
     if (day === 0) {
-        dayForEN = `Sunday`;
+        dayForEN = `週日`;
     } else if (day === 1) {
-        dayForEN = `Monday`;
+        dayForEN = `週一`;
     } else if (day === 2) {
-        dayForEN = `Tuesday`;
+        dayForEN = `週二`;
     } else if (day === 3) {
-        dayForEN = `Wednesday`;
+        dayForEN = `週三`;
     } else if (day === 4) {
-        dayForEN = `Thursday`;
+        dayForEN = `週四`;
     } else if (day === 5) {
-        dayForEN = `Friday`;
+        dayForEN = `週五`;
     } else if (day === 6) {
-        dayForEN = `Saturday`;
+        dayForEN = `週六`;
     }
     return dayForEN;
 }
