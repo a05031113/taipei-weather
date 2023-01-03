@@ -57,6 +57,7 @@ async function getNext5Days(){
         };
         const img = document.createElement("img");
         img.src = `img/${imgData}.png`;
+        img.style.width = "3em" 
         next5DaysIcon.appendChild(img);
 
         //minT
