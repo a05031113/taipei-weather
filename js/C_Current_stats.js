@@ -1,4 +1,4 @@
-const CWB_API_KEY = "CWB-25142137-EFE4-4F9E-9B46-D41BF5BD73D5";
+const CWB_API_KEY = "CWB-F5A74515-9453-4F52-8D65-1C22FB57FDA5";
 const currentStats = document.querySelector(".current-stats");
 let taipeiWeatherCurrentStatsData = []; // For saving weather data from API
 
@@ -37,7 +37,7 @@ const currentStatsModel = {
                 response = await fetch(src);
                 result = await response.json();
                 taipeiWeatherCurrentStatsData.push({
-                        "value": result.records.location[0].weatherElement[1].time[0].parameter.parameterName, 
+                        "value": result.records.location[0].weatherElement[1].time[0].parameter.parameterName, // PoP
                         "unit": "%",
                         "label": "降雨機率"
                     });
@@ -52,7 +52,7 @@ const currentStatsModel = {
                 result = await response.json();
                 console.log(result);
                 taipeiWeatherCurrentStatsData.push({
-                        "value": result.records.locations.location[0].time[0].parameter[1].parameterValue, 
+                        "value": result.records.locations.location[0].time[0].parameter[1].parameterValue,
                         "unit": "",
                         "label": "日出時間"
                     });
