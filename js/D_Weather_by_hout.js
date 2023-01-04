@@ -9,7 +9,7 @@ fetch(urlD + apiKeyD + locationD).then((response)=>{
     // create weather-by-hour container
     const weatherByHourHeading = document.createElement("h2");
     weatherByHourHeading.classList.add("weather-by-hour__heading");
-    weatherByHourHeading.textContent = "Today's weather";
+    weatherByHourHeading.textContent = "今日天氣預報";
     const weatherByHourContainer = document.createElement("div");
     weatherByHourContainer.classList.add("weather-by-hour__container");
     weatherByHour.appendChild(weatherByHourHeading);
