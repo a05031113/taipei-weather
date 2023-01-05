@@ -29,4 +29,7 @@ Jasmin: Part E <br />
 
 ---
 
-reference: [Designing And Developing A Responsive Weather App Webpage](https://medium.com/@JonUK/designing-and-developing-a-responsive-weather-app-webpage-part-1-b155b004a5ba)
+reference:
+
+- [Designing And Developing A Responsive Weather App Webpage](https://medium.com/@JonUK/designing-and-developing-a-responsive-weather-app-webpage-part-1-b155b004a5ba)
+- [氣象資料開放平臺](https://opendata.cwb.gov.tw/index)
