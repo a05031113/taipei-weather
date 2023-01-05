@@ -10,21 +10,21 @@
 
 ![](/img/distribution.png)
 
-小羊：Part A and 統整 \n
-Helen: Part B \n
-Ann: Part C \n
-Erin: Part D \n
-Jasmin: Part E \n
+小羊：Part A and 統整 <br />
+Helen: Part B <br />
+Ann: Part C <br />
+Erin: Part D <br />
+Jasmin: Part E <br />
 
 ---
 
 ## 問題與討論：
 
-1.  成員主要都想做後端，前端成空缺 \n
+1.  成員主要都想做後端，前端成空缺 <br />
     解決方法：參考別人做的範本
-2.  .DS-Store 會導致檔案衝突 \n
+2.  .DS-Store 會導致檔案衝突 <br />
     解決方法：透過 git 指令刪除已經 push 上去的，並把.DS_Store 放入 gitignore
-3.  圖片路徑與名稱及整體使用中文或英文 \n
+3.  圖片路徑與名稱及整體使用中文或英文 <br />
     解決方法：再開一次會協調
 
 ---
